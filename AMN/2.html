@@ -1,0 +1,310 @@
+<!doctype html>
+<html>
+<meta name="viewport" content="width=device_width,initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body{font-family: "Karma", sans-serif}
+  body
+  {
+    margin:20px;
+    position:relative;
+  }
+  .follow
+  {
+    width:100%;
+    background-color:black;
+    height:50px;
+  }
+  .follow a
+  {
+    float:left;
+    color:white;
+    display:block;
+    padding:15px 12px;
+    font-size:20px;
+  }
+  .adb:hover
+  {
+    background-color:#f1f1f1;
+  }
+  .bar
+  {
+    position:sticky;
+    top:0;
+    width:100%;
+    background-color:white;
+    font-size:25px;
+    height:100%;
+    display:none;
+  }
+  .bar a
+  {
+    text-decoration:none;
+    display:block;
+    color:black;
+    padding:30px;
+    cursor:pointer;
+  }
+  .bar a:hover
+  {
+    background-color:#f6f6f6;
+  }
+  .nav
+  {
+    float:left;
+    font-size:25px;
+    color:black;
+    width:100%;
+    background-color:white;
+  }
+  .mail
+  {
+    position:absolute;
+    right:0px;
+  }
+  .myfood
+  {
+    margin-left:40%;
+    position:absolute;
+  }
+  .imagebar
+  {
+    float:left;
+    width:20%;
+    padding:15px;
+
+  }
+  ul{
+    list-style-type:none;
+    margin-left:38%;
+  }
+  li
+  {
+    float:left;
+  }
+  li a
+  {
+    display:block;
+    text-decoration:none;
+    font-size:20px;
+    padding:6px 10px;
+    color:black;
+  }
+  li a.active
+  {
+    background-color:black;
+  }
+  li a:hover
+  {
+    background-color:#f6f6f6;
+    color:black;
+  }
+  .active
+  {
+    background-color:black;
+    color:white;
+  }
+  .s
+  {
+    height:600px;
+  }
+  .imagebar img
+  {
+    width:100%;
+  }
+  .ab
+  {
+    margin-left:21%;
+  }
+  .end
+  {
+    width:33.33%;
+    float:left;
+    height:250px;
+  }
+  .blog
+  {
+    width:33.33%;
+    float:left;
+    height:250px;
+  }
+  .populartags
+  {
+    float:left;
+    width:33.33%;
+    height:250px;
+  }
+  .populartags button
+  {
+    background-color:#8a8986;
+    color:white;
+    border:none;
+    outline:none;
+  }
+  .mb
+  {
+    background-color:black;
+    color:white;
+  }
+  @media  screen and (max-width: 380px)
+  {
+    .s
+    {
+      height:550px;
+    }
+    ul
+    {
+      margin-left:300px;
+    }
+    img
+    {
+      width:100px;
+    }
+  }
+
+
+  </style>
+  <body>
+    <div id="m" class="bar">
+    <a  href="javascript:void(0)" onclick="closenav()">Close Menu</a>
+    <a href="#">Food</a>
+    <a href="#">About</a>
+    </div>
+    <div class="nav">
+      <span class="openbar" onclick="opennav()" style="cursor:pointer">&#9778;</span>
+      <span class="myfood">My Food</span>
+      <span class="mail"><a href="mailto:anilkumarnaik1999@gmail.com" style="text-decoration:none;color:black;">Mail</a></span>
+      </div>
+      <br><br><br><br>
+      <div class="s">
+      <div class="imagebar">
+        <img src="cherries.jpg">
+        <h2 style="line-height:30px;text-align:center;font-weight:normal;">The Perfect Sandwich, A Real NYC Classic</h2>
+        <p style="text-align:center">Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+        <div class="imagebar">
+          <img src="wine.jpg">
+          <h2 style="line-height:30px;text-align:center;font-weight:normal;">Let Me Tell You About This Steak</h2>
+          <p style="text-align:center">Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+          </div>
+          <div class="imagebar">
+            <img src="steak.jpg">
+            <h2 style="line-height:30px;text-align:center;font-weight:normal;">Cherries, interrupted</h2>
+            <p style="text-align:center">Lorem ipsum text praesent tincidunt ipsum lipsum.
+ </p><p style="text-align:center;">
+What else?</p>
+            </div>
+            <div class="imagebar">
+              <img src="sandwich.jpg">
+              <h2 style="line-height:30px;text-align:center;font-weight:normal;">Once Again, Robust Wine and Vegetable Pasta</h2>
+              <p style="text-align:center">Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+              </div>
+            </div>
+<div class="s">
+              <div class="imagebar" >
+                <img src="croissant.jpg">
+                <h2 style="line-height:30px;text-align:center;font-weight:normal;">Le French</h2>
+                <p style="text-align:center">Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                </div>
+                <div class="imagebar">
+                  <img src="salmon.jpg">
+                  <h2 style="line-height:30px;text-align:center;font-weight:normal;">Salmon For Your Skin</h2>
+                  <p style="text-align:center">Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                  </div>
+                  <div class="imagebar">
+                    <img src="popsicle.jpg">
+                    <h2 style="line-height:30px;text-align:center;font-weight:normal;">All I Need Is a Popsicle</h2>
+                    <p style="text-align:center">Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                    </div>
+                    <div class="imagebar">
+                      <img src="sandwich.jpg">
+                      <h2 style="line-height:30px;text-align:center;font-weight:normal;">The Perfect Sandwich, A Real Classic</h2>
+                      <p style="text-align:center">Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                      </div>
+                    </div>
+                      <div>
+                      <ul>
+                        <li><a href="#">&laquo;</a></li>
+                          <li ><a class="active" href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                              <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                  <li><a href="#">5</a></li>
+                                    <li><a href="#">&raquo;</a></li>
+                      </ul>
+</div>
+<br><br><br><br>
+<hr></hr>
+<br><br><br>
+<h1 style="text-align:center">About Me,The Food Man</h1>
+<br><br>
+<div>
+  <img class="ab" src="chef.jpg">
+  <br><br>
+  <h2 style="text-align:center">I am Who I Am!</h2>
+  <h4 style="text-align:center;font-weight:normal;">With Passion For Real, Good Food</h4>
+  <p style="text-align:center;line-height:1.5;">Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+
+</div>
+<br><br>
+<hr></hr>
+
+  <br><br><br>
+  <div class="end">
+    <h2 style="text-align:left;font-weight:normal;margin-left:20px;">FOOTER</h2>
+    <p style="text-align:left;font-size:17px;line-height:1.5;margin-left:20px;">Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+    <p style="text-align:left;font-size:17px;margin-left:20px;">Powered by<a href="mailto:anilkumarnaik1999@gmail.com"> AMN</a></p>
+</div>
+<div class="blog">
+  <h2 style="text-align:left;font-weight:normal;margin-left:20px;">BLOG   POSTS</h2>
+<div class="adb"style="padding:12px;border-bottom:1px solid black;">
+<img src="workshop.jpg" style="width:50px;height:50px;"><div style="margin-top:-50px;margin-left:60px">Lorem<br>
+Sed mattis nunc
+</div>
+<br>
+</div>
+<div class="adb"style="padding:12px;border-bottom:1px solid black;">
+<img src="gondol.jpg" style="width:50px;height:50px;"><div style="margin-top:-50px;margin-left:60px">Lorem<br>
+Sed mattis nunc
+</div>
+<br>
+</div>
+</div>
+<div class="populartags" >
+  <h2 style="text-align:left;font-weight:normal;margin-left:20px;">POPULAR TAGS</h2>
+<button style="background-color:black;color:white;">Travel</button>
+<button>Dinner</button>
+<button>Salmon</button>
+<button>Drinks</button>
+<button>France</button><br><br>
+<button>Ideas</button>
+<button>Flavours</button>
+<button>Chicken</button>
+<button>Cuisine</button>
+<button>Friend</button>
+<button>Fish</button><br><br>
+</div>
+<h4 style="font-weight:normal">Follow me on</h4>
+<div class="follow">
+  <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+  <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+  <a href="https://www.google.com"><i class="fa fa-google"></i></a>
+  <a href="https://www.youtube.com"><i class="fa fa-youtube"></i></a>
+  <a href="https://www.linkdin.com"><i class="fa fa-linkedin"></i></a>
+  <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+  <a href="https://www.telegram.com"><i class="fa fa-telegram"></i></a>
+  </div>
+    <script>
+      function closenav()
+      {
+        var a=document.getElementById("m");
+        a.style.display="none";
+      }
+      function opennav()
+      {
+        var a=document.getElementById("m");
+        a.style.display="block";
+      }
+      </script>
+    </body>
+    </html>
